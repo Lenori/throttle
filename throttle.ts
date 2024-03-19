@@ -43,7 +43,7 @@ const throttle = async (workers: number, tasks: Task[]) => {
                         status: 'idle',
                     };
 
-                    logger('Worker %i is now idle', i);
+                    logger('Worker %i is now idle', i + 1);
                     return result;
                 });
 
